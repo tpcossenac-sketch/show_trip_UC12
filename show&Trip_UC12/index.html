@@ -1,0 +1,109 @@
+/
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta | Show&Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+        <div class="brand">
+            <div class="brand-name">
+                <img src="img/localizacao.png" class="pin" alt="Localização">
+                <span>Show&Trip</span>
+            </div>
+            <p>Integração entre cultura, turismo e<br> gastronomia.</p>
+        </div>
+
+        <div class="cadastroCard">
+
+            <img src="img/usuario.png" class="form-icon" alt="Adicionar usuário">
+
+            <h1>Criar sua conta</h1>
+            <p class="subtitulo">
+                Acesse eventos, resgate benefícios<br>
+                e explore o melhor da cidade.
+            </p>
+
+            <form id="registerForm">
+
+                <label class="input-box">
+                    <img src="img/pessoa.png">
+                    <input type="text" name="nome" placeholder="Nome completo" required>
+                </label>
+
+                <label class="input-box">
+                    <img src="img/gmail.png"> 
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </label>
+
+                <label class="input-box">
+                    <img src="img/celular.png">
+                    <input type="tel" name="telefone" placeholder="Telefone" required>
+                </label>
+
+                <label class="input-box">
+                    <img src="img/senha.png">
+                    <input id="senha" type="password" name="senha" placeholder="Senha" minlength="6" required>
+                    <button class="eye-button" type="button" data-target="senha">
+                        <img src="img/ver_senha.png">
+                    </button>
+                </label>
+
+                <label class="input-box">
+                    <img src="img/senha.png">
+                    <input id="confirmarSenha" type="password" name="confirmarSenha" placeholder="Confirmar senha"
+                        minlength="6" required>
+                    <button class="eye-button" type="button" data-target="confirmarSenha">
+                        <img src="img/ver_senha.png">
+                    </button>
+                </label>
+
+                <span class="type-label">Tipo de usuário</span>
+
+                <div class="user-types">
+                    <label class="type-option selected">
+                        <input type="radio" name="tipo" value="Turista" checked>
+                        <img src="img/pessoa.png"> Turista 
+                    </label>
+
+                    <label class="type-option">
+                        <input type="radio" name="tipo" value="Parceiro">
+                        <span>♧</span> Parceiro
+                    </label>
+                </div>
+
+                <label class="terms">
+                    <input type="checkbox" required>
+                    <span>
+                        Li e aceito os <a href="#">Termos de Uso</a> e a
+                        <a href="#">Política de Privacidade</a>
+                    </span>
+                </label>
+
+                <button class="submit-button" type="submit">
+                    Cadastrar
+                </button>
+
+                <p class="feedback" id="feedback"></p>
+
+            </form>
+
+            <div class="separator"></div>
+
+            <p class="login-text">
+                Já tem uma conta?
+                <a href="#">Fazer login</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
